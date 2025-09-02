@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <h3 className="text-3xl font-bold mb-4">Slowcation</h3>
+            <h3 className="text-3xl font-bold mb-4">Bare Necessities</h3>
             <p className="text-white/70 text-lg leading-relaxed mb-6">
               Discover the art of slow living through curated travel experiences. 
               We believe that the best journeys happen when you take time to truly connect 
