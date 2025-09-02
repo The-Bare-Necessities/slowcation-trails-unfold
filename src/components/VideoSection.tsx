@@ -18,7 +18,7 @@ export const VideoSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-white text-center max-w-4xl mx-auto px-6 h-screen flex items-center justify-center">
-        {/* Video Controls UI - Moved to bottom center */}
+        {/* Video Controls UI - Bottom center */}
         <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex items-center justify-center space-x-4">
           <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
             <Play className="w-6 h-6" />
@@ -30,13 +30,13 @@ export const VideoSection = () => {
             <SkipForward className="w-6 h-6" />
           </Button>
         </div>
+      </div>
 
-        {/* Skip Button */}
-        <div className="absolute bottom-8 left-8">
-          <Button variant="ghost" className="text-white hover:bg-white/20 border border-white/30">
-            SKIP →
-          </Button>
-        </div>
+      {/* Skip Button - bottom left of section */}
+      <div className="absolute bottom-8 left-8 z-10">
+        <Button variant="ghost" className="text-white hover:bg-white/20 border border-white/30">
+          SKIP →
+        </Button>
       </div>
     </section>
   );
