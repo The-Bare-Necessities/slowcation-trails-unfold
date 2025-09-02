@@ -3,7 +3,7 @@ import heroMountain from '@/assets/hero-mountain.jpg';
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
@@ -13,25 +13,34 @@ export const HeroSection = () => {
       />
       
       {/* Content */}
-      <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
-        <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light">
-            Are you
-          </h1>
-          
-          <div className="relative">
-            <h2 className="text-8xl md:text-9xl lg:text-[12rem] font-bold leading-none">
-              OOO?
-            </h2>
-            <p className="text-lg md:text-xl text-white/70 mt-4">
-              (out-of-office)
-            </p>
+      <div className="relative z-10 text-white max-w-6xl mx-auto px-6 w-full">
+        <div className="flex flex-col h-screen justify-center">
+          {/* Left aligned content */}
+          <div className="text-left">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light">
+              Are you
+            </h1>
+            
+            <div className="relative inline-block">
+              <h2 className="text-8xl md:text-9xl lg:text-[12rem] font-bold leading-none">
+                OOO?
+              </h2>
+              <p className="text-lg md:text-xl text-white/70 absolute left-1/2 transform -translate-x-1/2 mt-2">
+                (out-of-office)
+              </p>
+            </div>
           </div>
           
-          <div className="mt-12">
-            <blockquote className="border-l-4 border-white pl-6 text-xl md:text-2xl font-light italic">
-              Experience a slow-cation with us
-            </blockquote>
+          {/* Right aligned quote with box */}
+          <div className="mt-20 flex justify-end">
+            <div className="relative">
+              <div className="relative border border-white/30 p-6 inline-block">
+                <div className="absolute -top-2 -left-2 text-2xl text-white">"</div>
+                <div className="absolute -bottom-2 -right-2 text-2xl text-white">"</div>
+                <span className="text-xl md:text-2xl font-light italic">Experience a slow</span>
+              </div>
+              <span className="text-xl md:text-2xl font-light italic ml-2">-cation with us</span>
+            </div>
           </div>
         </div>
       </div>
