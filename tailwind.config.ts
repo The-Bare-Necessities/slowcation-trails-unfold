@@ -83,6 +83,17 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			transformStyle: {
+				'preserve-3d': 'preserve-3d'
+			},
+			transform: {
+				'translateZ-16': 'translateZ(4rem)',
+				'rotateY-180': 'rotateY(180deg)',
+				'rotateY-90': 'rotateY(90deg)',
+				'rotateY--90': 'rotateY(-90deg)',
+				'rotateX-90': 'rotateX(90deg)',
+				'rotateX--90': 'rotateX(-90deg)'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {

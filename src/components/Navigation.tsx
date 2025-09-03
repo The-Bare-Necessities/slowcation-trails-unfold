@@ -47,7 +47,7 @@ export const Navigation = ({ showOnScroll = false }: NavigationProps) => {
               Our Story
             </button>
             <button
-              onClick={() => scrollToSection('slowcation')}
+              onClick={() => scrollToSection('launching')}
               className="text-foreground hover:text-primary transition-smooth"
             >
               Slowcation
