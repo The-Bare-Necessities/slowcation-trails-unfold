@@ -118,7 +118,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-white/70 text-sm">
-            © 2024 Slowcation. All rights reserved.
+            © 2024 Bare Necessities. All rights reserved.
           </div>
           
           <div className="flex items-center space-x-1 text-white/70 text-sm">

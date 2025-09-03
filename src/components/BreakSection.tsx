@@ -15,22 +15,20 @@ export const BreakSection = () => {
         }}
       />
       
-      {/* Dashed connecting lines */}
+      {/* Dashed connecting lines - following the journey */}
       <svg className="absolute inset-0 w-full h-full z-5" xmlns="http://www.w3.org/2000/svg">
-        {/* Line from mail to travel */}
-        <path d="M200,120 Q300,150 400,180" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
-        {/* Line from travel to main content */}
-        <path d="M400,180 Q500,250 600,400" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
-        {/* Line from main to cycle */}
-        <path d="M600,400 Q400,500 200,600" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
-        {/* Line from cycle to song */}
-        <path d="M200,600 Q600,580 800,550" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
-        {/* Line from song to break */}
-        <path d="M800,550 Q600,580 450,620" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
-        {/* Line connecting to welcome badge */}
-        <path d="M750,300 Q850,400 900,650" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
-        {/* Additional connecting paths */}
-        <path d="M750,220 Q650,300 600,400" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Welcome badge to You got mail */}
+        <path d="M900,650 Q300,400 200,120" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* You got mail to Take that break */}
+        <path d="M200,120 Q300,350 450,620" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Take that break to Travel the world */}
+        <path d="M450,620 Q300,300 400,180" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Travel the world to Cycle to nowhere */}
+        <path d="M400,180 Q250,400 200,600" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Cycle to nowhere to Play that song */}
+        <path d="M200,600 Q500,450 800,550" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Play that song to You have beautiful life (connecting to main content) */}
+        <path d="M800,550 Q700,450 600,400" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
       </svg>
 
       {/* Illustrated Elements - positioned absolutely for creative layout */}
@@ -94,11 +92,6 @@ export const BreakSection = () => {
           </div>
         </div>
 
-        <div className="absolute top-60 right-32">
-          <div className="bg-primary/90 text-white p-3 rounded-lg shadow-soft">
-            <p className="text-sm">So here you go...</p>
-          </div>
-        </div>
 
         {/* Welcome Badge */}
         <div className="absolute bottom-16 right-8">
