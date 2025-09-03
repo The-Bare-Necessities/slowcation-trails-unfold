@@ -15,6 +15,24 @@ export const BreakSection = () => {
         }}
       />
       
+      {/* Dashed connecting lines */}
+      <svg className="absolute inset-0 w-full h-full z-5" xmlns="http://www.w3.org/2000/svg">
+        {/* Line from mail to travel */}
+        <path d="M200,120 Q300,150 400,180" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Line from travel to main content */}
+        <path d="M400,180 Q500,250 600,400" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Line from main to cycle */}
+        <path d="M600,400 Q400,500 200,600" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Line from cycle to song */}
+        <path d="M200,600 Q600,580 800,550" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Line from song to break */}
+        <path d="M800,550 Q600,580 450,620" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Line connecting to welcome badge */}
+        <path d="M750,300 Q850,400 900,650" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+        {/* Additional connecting paths */}
+        <path d="M750,220 Q650,300 600,400" stroke="white" strokeWidth="2" fill="none" strokeDasharray="8,8" opacity="0.8"/>
+      </svg>
+
       {/* Illustrated Elements - positioned absolutely for creative layout */}
       <div className="relative z-10 min-h-screen flex flex-col justify-center">
         {/* Decorative Elements */}

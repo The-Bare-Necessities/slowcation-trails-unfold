@@ -1,31 +1,38 @@
 export const LaunchingSection = () => {
   return (
-    <section className="py-20 bg-gradient-hero text-white">
+    <section className="py-20 bg-black text-white relative overflow-hidden">
       <div className="container mx-auto px-6 text-center">
-        {/* Header */}
-        <div className="mb-12">
+        {/* Header with lines */}
+        <div className="mb-12 relative">
           <div className="flex items-center justify-center mb-8">
+            <div className="flex-1 h-px bg-white/30 mr-6"></div>
             <span className="text-3xl mr-4">💬</span>
             <h2 className="text-4xl md:text-5xl font-bold">SLOWCATION</h2>
+            <div className="flex-1 h-px bg-white/30 ml-6"></div>
           </div>
         </div>
 
         {/* Main Content */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto relative">
           {/* Launching Text with Holographic Effect */}
-          <div className="mb-12">
+          <div className="mb-12 relative">
             <h1 className="text-6xl md:text-8xl font-bold mb-8 relative">
-              <span className="bg-gradient-to-r from-primary-glow via-secondary to-primary bg-clip-text text-transparent">
+              <span className="text-white relative">
                 Launching
+                {/* Holographic overlay effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 via-purple-500/30 to-pink-500/30 bg-clip-text text-transparent mix-blend-screen animate-pulse"></div>
               </span>
               <br />
-              <span className="bg-gradient-to-r from-secondary via-primary-glow to-primary bg-clip-text text-transparent">
+              <span className="text-white relative">
                 soon
+                {/* Holographic overlay effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-500/30 via-blue-500/30 to-purple-500/30 bg-clip-text text-transparent mix-blend-screen animate-pulse delay-500"></div>
               </span>
               
-              {/* Holographic Elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-secondary/30 rounded-full blur-sm animate-pulse" />
-              <div className="absolute top-1/2 -left-6 w-4 h-4 bg-primary-glow/40 rounded-full blur-sm animate-ping" />
+              {/* Geometric holographic elements */}
+              <div className="absolute -top-8 -right-8 w-16 h-16 border-2 border-blue-400/40 rotate-45 animate-pulse"></div>
+              <div className="absolute top-1/2 -left-8 w-12 h-12 border-2 border-purple-400/40 rounded-full animate-ping"></div>
+              <div className="absolute bottom-0 right-1/4 w-8 h-8 bg-gradient-to-r from-pink-400/40 to-blue-400/40 transform rotate-45 animate-pulse delay-1000"></div>
             </h1>
           </div>
 

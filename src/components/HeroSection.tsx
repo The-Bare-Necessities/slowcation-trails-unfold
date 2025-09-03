@@ -4,13 +4,6 @@ import heroMountain from '@/assets/hero-mountain.jpg';
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{
-          backgroundImage: `url(${heroMountain})`
-        }}
-      />
       
       {/* Content */}
       <div className="relative z-10 text-white max-w-6xl mx-auto px-6 w-full">
