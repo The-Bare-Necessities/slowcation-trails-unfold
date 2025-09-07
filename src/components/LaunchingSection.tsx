@@ -15,15 +15,18 @@ export const LaunchingSection = () => {
         {/* Main Layout - Two Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           {/* Left Column - Launching Soon with 3D Cube */}
-          <div className="relative">
-            {/* 3D Glass Cube */}
-            <div className="relative mb-12 flex justify-center lg:justify-start">
-              <Cube3D />
+          <div className="relative h-[600px] flex items-center justify-center">
+            {/* Background Text - positioned behind cube */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/20 leading-tight text-center">
+                Launching<br />soon
+              </h1>
             </div>
             
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-tight text-center lg:text-left">
-              Launching<br />soon
-            </h1>
+            {/* 3D Glass Cube - positioned in front of text */}
+            <div className="relative z-20">
+              <Cube3D />
+            </div>
           </div>
 
           {/* Right Column - Content */}
