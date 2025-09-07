@@ -1,3 +1,5 @@
+import { Cube3D } from './Cube3D';
+
 export const LaunchingSection = () => {
   return (
     <section id="launching" className="py-20 bg-black text-white relative overflow-hidden min-h-screen flex items-center">
@@ -16,20 +18,7 @@ export const LaunchingSection = () => {
           <div className="relative">
             {/* 3D Glass Cube */}
             <div className="relative mb-12 flex justify-center lg:justify-start">
-              <div className="w-32 h-32 relative preserve-3d animate-spin-slow">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm border border-white/30 rounded-lg transform-gpu"
-                     style={{ transform: 'rotateY(0deg) translateZ(64px)' }}></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-sm border border-white/20 rounded-lg transform-gpu"
-                     style={{ transform: 'rotateY(90deg) translateZ(64px)' }}></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-lg transform-gpu"
-                     style={{ transform: 'rotateY(180deg) translateZ(64px)' }}></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-sm border border-white/20 rounded-lg transform-gpu"
-                     style={{ transform: 'rotateY(-90deg) translateZ(64px)' }}></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border border-white/30 rounded-lg transform-gpu"
-                     style={{ transform: 'rotateX(90deg) translateZ(64px)' }}></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 rounded-lg transform-gpu"
-                     style={{ transform: 'rotateX(-90deg) translateZ(64px)' }}></div>
-              </div>
+              <Cube3D />
             </div>
             
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-tight text-center lg:text-left">

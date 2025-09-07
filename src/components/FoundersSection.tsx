@@ -44,10 +44,6 @@ export const FoundersSection = () => {
                 <div className="absolute top-6 left-8 w-8 h-6 bg-white/40 rounded-full"></div>
                 <div className="absolute top-3 right-6 w-10 h-6 bg-white/50 rounded-full"></div>
               </div>
-              
-              <Button variant="nature" className="w-full">
-                Watch Shreya's Story
-              </Button>
             </div>
           </div>
 
@@ -78,10 +74,6 @@ export const FoundersSection = () => {
                 <div className="absolute top-6 left-8 w-8 h-6 bg-white/40 rounded-full"></div>
                 <div className="absolute top-3 right-6 w-10 h-6 bg-white/50 rounded-full"></div>
               </div>
-              
-              <Button variant="nature" className="w-full">
-                Watch Kaustav's Story
-              </Button>
             </div>
           </div>
         </div>
