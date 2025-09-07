@@ -1,7 +1,7 @@
 import { HeroSection } from '@/components/HeroSection';
 import { VideoSection } from '@/components/VideoSection';
 import { LaunchingSection } from '@/components/LaunchingSection';
-import { BreakSection } from '@/components/BreakSection';
+
 import { StorySection } from '@/components/StorySection';
 import { FoundersSection } from '@/components/FoundersSection';
 import { ContactSection } from '@/components/ContactSection';
@@ -13,7 +13,7 @@ const Index = () => {
       <HeroSection />
       <VideoSection />
       <LaunchingSection />
-      <BreakSection />
+      
       <StorySection />
       <FoundersSection />
       <ContactSection />
