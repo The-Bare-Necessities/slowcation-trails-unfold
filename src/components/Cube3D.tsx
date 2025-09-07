@@ -154,7 +154,6 @@ export const Cube3D = () => {
       pointLight2.position.x = Math.cos(time * 1.5) * 3;
       pointLight2.position.y = Math.sin(time * 1.5) * 3;
     }
-    scene.add(directionalLight);
 
     animate();
 
