@@ -23,13 +23,13 @@ export const Cube3D = () => {
     mountRef.current.appendChild(renderer.domElement);
 
     // Create glass cube
-    const geometry = new THREE.BoxGeometry(3, 3, 3);
+    const geometry = new THREE.BoxGeometry(2, 2, 2);
     
     // Futuristic holographic material
     const material = new THREE.MeshPhysicalMaterial({
       color: 0x00ffff,
       transparent: true,
-      opacity: 0.15,
+      opacity: 0.3,
       roughness: 0,
       metalness: 0,
       transmission: 0.95,
@@ -38,7 +38,7 @@ export const Cube3D = () => {
       clearcoat: 1,
       clearcoatRoughness: 0,
       emissive: 0x001122,
-      emissiveIntensity: 0.3,
+      emissiveIntensity: 0.5,
     });
 
     const cube = new THREE.Mesh(geometry, material);
@@ -58,29 +58,29 @@ export const Cube3D = () => {
     scene.add(wireframe);
 
     // Add inner glow effect
-    const innerGeometry = new THREE.BoxGeometry(2.8, 2.8, 2.8);
+    const innerGeometry = new THREE.BoxGeometry(1.8, 1.8, 1.8);
     const innerMaterial = new THREE.MeshBasicMaterial({
       color: 0x0088ff,
       transparent: true,
-      opacity: 0.1,
+      opacity: 0.2,
       side: THREE.BackSide
     });
     const innerCube = new THREE.Mesh(innerGeometry, innerMaterial);
     scene.add(innerCube);
 
     // Enhanced lighting setup
-    const ambientLight = new THREE.AmbientLight(0x404040, 0.4);
+    const ambientLight = new THREE.AmbientLight(0x404040, 0.6);
     scene.add(ambientLight);
     
     // Multiple directional lights for futuristic effect
-    const directionalLight1 = new THREE.DirectionalLight(0x00ffff, 1.2);
+    const directionalLight1 = new THREE.DirectionalLight(0x00ffff, 1.5);
     directionalLight1.position.set(5, 5, 5);
     directionalLight1.castShadow = true;
     directionalLight1.shadow.mapSize.width = 2048;
     directionalLight1.shadow.mapSize.height = 2048;
     scene.add(directionalLight1);
 
-    const directionalLight2 = new THREE.DirectionalLight(0xff0088, 0.8);
+    const directionalLight2 = new THREE.DirectionalLight(0xff0088, 1.0);
     directionalLight2.position.set(-5, -5, 5);
     scene.add(directionalLight2);
 
@@ -94,7 +94,7 @@ export const Cube3D = () => {
     scene.add(pointLight2);
 
     // Position camera further back for larger cube
-    camera.position.z = 6;
+    camera.position.z = 5;
 
     // Add floating particles around the cube
     const particleGeometry = new THREE.BufferGeometry();
@@ -144,7 +144,7 @@ export const Cube3D = () => {
       particles.rotation.y += 0.002;
       
       // Pulsing glow effect
-      const pulse = Math.sin(time * 2) * 0.1 + 0.3;
+      const pulse = Math.sin(time * 2) * 0.2 + 0.5;
       material.emissiveIntensity = pulse;
       
       // Animate point lights
