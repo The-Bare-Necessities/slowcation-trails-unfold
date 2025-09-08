@@ -29,16 +29,16 @@ export const Cube3D = () => {
     const material = new THREE.MeshPhysicalMaterial({
       color: 0x00ffff,
       transparent: true,
-      opacity: 0.3,
+      opacity: 0.6,
       roughness: 0,
       metalness: 0,
-      transmission: 0.95,
+      transmission: 0.7,
       ior: 1.5,
-      thickness: 0.2,
+      thickness: 0.5,
       clearcoat: 1,
       clearcoatRoughness: 0,
-      emissive: 0x001122,
-      emissiveIntensity: 0.5,
+      emissive: 0x00ffff,
+      emissiveIntensity: 0.8,
     });
 
     const cube = new THREE.Mesh(geometry, material);
