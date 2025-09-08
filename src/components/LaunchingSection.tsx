@@ -17,14 +17,14 @@ export const LaunchingSection = () => {
           {/* Left Column - Launching Soon with 3D Cube */}
           <div className="relative h-[600px] flex items-center justify-center">
             {/* Background Text - positioned behind cube */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/20 leading-tight text-center">
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/20 leading-tight text-center select-none">
                 Launching<br />soon
               </h1>
             </div>
             
             {/* 3D Glass Cube - positioned in front of text */}
-            <div className="relative z-20">
+            <div className="relative z-30 flex items-center justify-center">
               <Cube3D />
             </div>
           </div>
