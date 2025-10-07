@@ -117,9 +117,9 @@ export const LaunchingSection = () => {
 
         {/* Bottom Stats/Features */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-20">
-          <div className="text-center space-y-3 p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105">
+          <div className="text-center space-y-3 p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:border-secondary/50 transition-all duration-300 hover:transform hover:scale-105">
             <div className="text-4xl">🏔️</div>
-            <h3 className="text-xl font-semibold text-primary">Explore</h3>
+            <h3 className="text-xl font-semibold text-secondary">Explore</h3>
             <p className="text-white/70 text-sm">Discover hidden trails and breathtaking vistas</p>
           </div>
           <div className="text-center space-y-3 p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:border-secondary/50 transition-all duration-300 hover:transform hover:scale-105">
@@ -127,9 +127,9 @@ export const LaunchingSection = () => {
             <h3 className="text-xl font-semibold text-secondary">Navigate</h3>
             <p className="text-white/70 text-sm">Find your path with curated adventures</p>
           </div>
-          <div className="text-center space-y-3 p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105">
+          <div className="text-center space-y-3 p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:border-secondary/50 transition-all duration-300 hover:transform hover:scale-105">
             <div className="text-4xl">🌍</div>
-            <h3 className="text-xl font-semibold text-primary">Connect</h3>
+            <h3 className="text-xl font-semibold text-secondary">Connect</h3>
             <p className="text-white/70 text-sm">Join a community of passionate travelers</p>
           </div>
         </div>
