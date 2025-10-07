@@ -66,7 +66,7 @@ export const Navigation = ({ showOnScroll = false }: NavigationProps) => {
             </button>
           </div>
 
-          <Button variant="nature" size="sm">
+          <Button className="bg-secondary hover:bg-secondary/90 text-white" size="sm">
             Get Invited
           </Button>
         </div>

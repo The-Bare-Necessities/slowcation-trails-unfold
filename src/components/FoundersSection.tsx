@@ -80,8 +80,8 @@ export const FoundersSection = () => {
 
         {/* Bottom Message */}
         <div className="text-center mt-16">
-          <div className="bg-secondary/20 rounded-2xl p-6 max-w-md mx-auto">
-            <p className="text-primary font-handwritten text-lg">
+          <div className="bg-secondary/10 border-2 border-secondary rounded-2xl p-6 max-w-md mx-auto">
+            <p className="text-secondary font-handwritten text-lg font-bold">
               📱 shares are appreciated!
             </p>
           </div>

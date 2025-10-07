@@ -16,33 +16,33 @@ export const Footer = () => {
             
             {/* Social Media */}
             <div className="flex space-x-4">
-              <a 
-                href="https://instagram.com/slowcation" 
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-smooth group"
+              <a
+                href="https://instagram.com/slowcation"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-smooth group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Instagram className="w-5 h-5 group-hover:scale-110 transition-bounce" />
               </a>
-              <a 
-                href="https://facebook.com/slowcation" 
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-smooth group"
+              <a
+                href="https://facebook.com/slowcation"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-smooth group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Facebook className="w-5 h-5 group-hover:scale-110 transition-bounce" />
               </a>
-              <a 
-                href="https://twitter.com/slowcation" 
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-smooth group"
+              <a
+                href="https://twitter.com/slowcation"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-smooth group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Twitter className="w-5 h-5 group-hover:scale-110 transition-bounce" />
               </a>
-              <a 
-                href="https://youtube.com/slowcation" 
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-smooth group"
+              <a
+                href="https://youtube.com/slowcation"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-smooth group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -108,7 +108,7 @@ export const Footer = () => {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-primary"
               />
-              <button className="px-6 py-2 bg-primary hover:bg-primary-glow rounded-lg transition-smooth font-medium">
+              <button className="px-6 py-2 bg-secondary hover:bg-secondary/90 rounded-lg transition-smooth font-medium">
                 Subscribe
               </button>
             </div>

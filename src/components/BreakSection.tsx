@@ -36,7 +36,7 @@ export const BreakSection = () => {
       {/* Illustrated Elements - positioned absolutely for creative layout */}
       <div className="relative z-10 min-h-screen flex flex-col justify-center">
         {/* Decorative Elements */}
-        <div className="absolute top-20 left-10 text-primary">
+        <div className="absolute top-20 left-10 text-white">
           <div className="transform -rotate-12 bg-secondary/80 p-3 rounded-lg shadow-float">
             <p className="text-sm font-handwritten">You've got mail ✉️</p>
             <p className="text-xs">And it says</p>
@@ -69,7 +69,7 @@ export const BreakSection = () => {
             Discover the "the sweetness of doing nothing"
           </p>
           
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+          <Button className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 py-4" size="lg">
             GET INVITE
           </Button>
         </div>
@@ -90,7 +90,7 @@ export const BreakSection = () => {
 
         <div className="absolute bottom-20 left-1/3">
           <div className="bg-secondary/80 p-2 rounded-lg transform rotate-3">
-            <p className="text-sm text-primary">Take that break 🧘‍♂️</p>
+            <p className="text-sm text-white">Take that break 🧘‍♂️</p>
           </div>
         </div>
 

@@ -79,7 +79,7 @@ export const ContactSection = () => {
                 />
               </div>
               
-              <Button variant="hero" className="w-full" size="lg">
+              <Button className="w-full bg-secondary hover:bg-secondary/90 text-white" size="lg">
                 <Send className="w-4 h-4 mr-2" />
                 Send Message
               </Button>
@@ -94,8 +94,8 @@ export const ContactSection = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary">Email</h4>
@@ -103,10 +103,10 @@ export const ContactSection = () => {
                     <p className="text-muted-foreground">bookings@slowcation.com</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary">Phone</h4>
@@ -114,10 +114,10 @@ export const ContactSection = () => {
                     <p className="text-sm text-primary/60">Available 9 AM - 6 PM EST</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-secondary" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary">Location</h4>
@@ -129,36 +129,36 @@ export const ContactSection = () => {
             </div>
 
             {/* Why Choose Us */}
-            <div className="bg-primary/5 rounded-3xl p-8">
-              <h3 className="text-2xl font-bold text-primary mb-6">Why Slowcation?</h3>
-              
+            <div className="bg-secondary/5 rounded-3xl p-8 border border-secondary/20">
+              <h3 className="text-2xl font-bold text-secondary mb-6">Why Slowcation?</h3>
+
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
-                  <p className="text-primary">Curated experiences, not tourist traps</p>
+                  <p className="text-secondary">Curated experiences, not tourist traps</p>
                 </div>
-                
+
                 <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
-                  <p className="text-primary">Small groups for authentic connections</p>
+                  <p className="text-secondary">Small groups for authentic connections</p>
                 </div>
-                
+
                 <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
-                  <p className="text-primary">Focus on mindfulness and well-being</p>
+                  <p className="text-secondary">Focus on mindfulness and well-being</p>
                 </div>
-                
+
                 <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
-                  <p className="text-primary">Sustainable and responsible travel</p>
+                  <p className="text-secondary">Sustainable and responsible travel</p>
                 </div>
               </div>
             </div>
