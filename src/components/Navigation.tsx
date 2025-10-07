@@ -35,8 +35,9 @@ export const Navigation = ({ showOnScroll = false }: NavigationProps) => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold text-primary">
-            Bare Necessities
+          <div className="flex items-center space-x-3">
+            <img src="/favicon.png" alt="Bare Necessities" className="h-8 w-8" />
+            <span className="text-xl font-bold text-primary">Bare Necessities</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
